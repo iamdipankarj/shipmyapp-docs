@@ -20,6 +20,7 @@ export function PricingColumnMinimal({
   heading,
   price,
   featured,
+  children,
   frequency,
   ...props
 }: PricingColumnMinimalProps) {
@@ -46,9 +47,7 @@ export function PricingColumnMinimal({
           ))}
         </ul>
       </div>
-      <CheckoutButtonMinimal href="/" featured={featured}>
-        Get Started
-      </CheckoutButtonMinimal>
+      {children}
     </div>
   )
 }
