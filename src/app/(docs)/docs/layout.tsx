@@ -291,7 +291,7 @@ export default function RootLayout({
         </div>
       </aside>
       <main className="min-h-screen bg-base-200 sm:pl-64 pb-12">
-        <div className="p-8 md:p-12  prose prose-xl">
+        <div className="p-8 md:p-12 prose prose-xl">
           {children}
         </div>
       </main>
