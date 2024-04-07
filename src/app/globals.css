@@ -6,6 +6,15 @@
   :root {
     --color-primary: #E22F38;
   }
+
+  ::selection {
+    color: #fff;
+    background: #36b37e;
+  }
+}
+
+body, html {
+  @apply !scroll-smooth;
 }
 
 @layer utilities {
@@ -15,6 +24,38 @@
 }
 
 @layer components {
+  .carousel-nav {
+    @apply inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 border bg-base-100 hover:bg-primary hover:text-white h-8 w-8 rounded-full;
+  }
+
+  .app-main {
+    @apply flex flex-col min-h-screen p-6 justify-center items-center;
+  }
+
+  .dashboard-main {
+    @apply min-h-screen pt-14 pl-64;
+  }
+
+  .dashboard-content {
+    @apply p-4 min-h-[calc(100vh-3.5rem)];
+  }
+
+  .container {
+    @apply mx-auto px-4 md:px-12 max-w-screen-lg;
+  }
+
+  .feature-icon {
+    @apply bg-primary/10 rounded-lg flex items-center justify-center h-12 w-12 shrink-0;
+  }
+
+  body[data-menu="open"] #navigation {
+    @apply scale-y-100;
+  }
+
+  .mobile-menu {
+    @apply absolute flex-col left-0 right-0 top-16 bg-white gap-2 z-50 duration-300 transition-transform scale-y-0 origin-[top_center];
+  }
+
   .hamburger-root {
     cursor: pointer;
     user-select: none;

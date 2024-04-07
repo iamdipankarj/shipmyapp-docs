@@ -20,6 +20,7 @@ const config: Config = {
       },
       strokeWidth: {
         '3': '3px',
+        '4': '4px',
       },
       colors: {
         "pink-light": "#FF649C",
@@ -91,14 +92,14 @@ const config: Config = {
       "sunset",
       {
         signal: {
-          "primary": "#2da530",
+          "primary": "#36b37e",
           "primary-content": "#fff",
           "secondary": "#f95c5c",
           "secondary-content": "#fff",
           "accent": "#5856d6",
           "neutral": "#27373f",
           "neutral-content": "#fff",
-          "base-100": "#fffcf9",
+          "base-100": "#fff",
           "info": "#ffe200",
           "success": "#19911c",
           "success-content": "#fff",
@@ -108,7 +109,7 @@ const config: Config = {
         },
       },
     ], // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
-    darkTheme: "cupcake", // name of one of the included themes for dark mode
+    darkTheme: "dark", // name of one of the included themes for dark mode
     base: true, // applies background color and foreground color for root element by default
     styled: true, // include daisyUI colors and design decisions for all components
     utils: true, // adds responsive and modifier utility classes

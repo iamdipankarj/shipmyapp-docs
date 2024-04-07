@@ -11,10 +11,11 @@ export function Logo({
   return (
     <Link className={cn("inline-flex w-48", className)} href="/">
       <Image
-        src="/logo-light.png"
+        src="/logo.png"
         alt="ShipMyApp"
         width={1675}
         height={512}
+        className="w-36 h-auto"
         priority
       />
     </Link>
