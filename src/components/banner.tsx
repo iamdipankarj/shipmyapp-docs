@@ -25,7 +25,7 @@ export function Banner({
                 </span>
               </h1>
               <p className="text-gray-500">
-                A No-Nonsense NextJS Starter kit for Startups.
+                A No-Nonsense NextJS Starter kit for Startups. Build your SaaS in a week and avoid burnout.
               </p>
               <CheckoutButton className="mt-14 hover:shadow-lg hover:shadow-primary/50 transition-all duration-500" featured>
                 Get ShipMyApp

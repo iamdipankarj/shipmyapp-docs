@@ -24,7 +24,7 @@ export function AIFeature({
         <FeatureContainer>
           <FeatureContent>
             <FeatureBadge>72 Hours Saved</FeatureBadge>
-            <FeatureHeader>OpenAI Integration</FeatureHeader>
+            <FeatureHeader>OpenAI &amp; Replicate Integration</FeatureHeader>
             <FeatureDescription>Want to build a chatbot or a language model? ShipMyApp uses OpenAI to help you build AI-powered applications.</FeatureDescription>
             <FeatureListContainer>
               <FeatureListItem icon={<Tent className="h-6 w-6 text-primary" />}>
