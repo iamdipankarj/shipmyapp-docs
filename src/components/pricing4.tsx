@@ -2,6 +2,7 @@ import React from 'react'
 import { cn } from "@/lib/utils"
 import { PricingColumnCorporate } from '@/components/pricing-column-corporate'
 import { CheckoutButton } from '@/components/checkout-button'
+import { PricingHeader } from '@/components/pricing-header'
 
 interface Pricing4Props extends React.HTMLAttributes<HTMLDivElement> {
 }
@@ -13,58 +14,32 @@ export function Pricing4({
   return (
     <section id="pricing" className={cn("bg-base-100", className)} {...props}>
       <div className="container">
+        <PricingHeader className="mb-12" />
         <div className="flex gap-7 mt-14">
           <PricingColumnCorporate
             className="flex-1"
-            heading="Starter"
-            price="29"
+            heading="All inclusive pricing"
+            price="79"
             frequency="month"
             lineItems={[
-              'Up to 600 minutes usage time',
-              'Use for personal only',
-              'Add up to 10 attendees',
-              'Technical support via email'
-            ]}
-          >
-            {/* <button
-              className="bg-primary/10 text-primary/90 w-full py-3 rounded-lg border border-transparent hover:border hover:border-primary/20 transition-all duration-300"
-            >
-              Purchase Now
-            </button> */}
-            <CheckoutButton mode="subscription" priceId="price_1OyFWZSDcM5frhqBOQ71f6lQ">
-              Purchase Now
-            </CheckoutButton>
-          </PricingColumnCorporate>
-          <PricingColumnCorporate
-            className="flex-1"
-            heading="Plus"
-            price="39"
-            frequency="month"
-            lineItems={[
-              'Up to 600 minutes usage time',
-              'Use for personal only',
-              'Add up to 10 attendees',
-              'Technical support via email'
+              'Next.JS 14',
+              'App Router',
+              'End to end authentication flow',
+              'NextAuth and Supabase',
+              'Database with Prisma ORM',
+              'OAuth and Email login',
+              'Magic Link Sign up',
+              'Multiple UI Components',
+              'Stripe and LemonSqueezy Payments',
+              'App Dashboard',
+              'Lifetime Updates',
+              'OpenAI Integration',
+              'Replicate Integration',
+              'Vercel AI Integration'
             ]}
             featured
           >
-            <CheckoutButton featured mode="subscription" priceId="price_1OyFWZSDcM5frhqBOQ71f6lQ">
-              Purchase Now
-            </CheckoutButton>
-          </PricingColumnCorporate>
-          <PricingColumnCorporate
-            className="flex-1"
-            heading="Pro"
-            price="59"
-            frequency="month"
-            lineItems={[
-              'Up to 600 minutes usage time',
-              'Use for personal only',
-              'Add up to 10 attendees',
-              'Technical support via email'
-            ]}
-          >
-            <CheckoutButton mode="subscription" priceId="price_1OyFWZSDcM5frhqBOQ71f6lQ">
+            <CheckoutButton className='btn-block' featured>
               Purchase Now
             </CheckoutButton>
           </PricingColumnCorporate>

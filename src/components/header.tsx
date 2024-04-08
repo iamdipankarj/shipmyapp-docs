@@ -45,12 +45,6 @@ export function Header() {
               <Link href="https://docs.shipmyapp.com" target="_blank" className="btn btn-ghost btn-sm">
                 Documentation
               </Link>
-              <Link href="/features" className="btn btn-ghost btn-sm">
-                Features
-              </Link>
-              <Link href="/blog" className="btn btn-ghost btn-sm">
-                Blog
-              </Link>
             </div>
             <Hamburger className="md:hidden" />
           </nav>

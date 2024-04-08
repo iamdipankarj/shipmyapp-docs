@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils"
 import Link from 'next/link'
 import { Banknote } from 'lucide-react'
 import Image from 'next/image'
+import { CheckoutButton } from '@/components/checkout-button'
 
 interface BannerProps extends React.HTMLAttributes<HTMLDivElement> {
 }
@@ -24,12 +25,11 @@ export function Banner({
                 </span>
               </h1>
               <p className="text-gray-500">
-                The last NextJS boilerplate you&apos;ll ever need.
+                A No-Nonsense NextJS Starter kit for Startups.
               </p>
-              <Link href="#pricing" className="mt-14 pe-4 inline-flex items-center btn btn-primary py-2 px-4 border border-primary hover:border-primary hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/50 transition-all duration-500">
-                <Banknote className="w-5 h-5" />
+              <CheckoutButton className="mt-14 hover:shadow-lg hover:shadow-primary/50 transition-all duration-500" featured>
                 Get ShipMyApp
-              </Link>
+              </CheckoutButton>
               <div className="mt-5">
                 <p className="inline-flex bg-yellow-600/10 text-sm rounded-lg py-2 px-5 gap-1">
                   Have Questions?{" "}

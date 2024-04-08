@@ -4,7 +4,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { X } from 'lucide-react';
 import React, { Fragment, ReactNode } from 'react'
 
-interface ModalProps extends React.PropsWithChildren<{}> {
+export interface ModalProps extends React.PropsWithChildren<{}> {
   open?: boolean
   heading?: ReactNode | null
   onClose: (value: boolean) => void

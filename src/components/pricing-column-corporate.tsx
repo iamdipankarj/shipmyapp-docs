@@ -33,26 +33,33 @@ export function PricingColumnCorporate({
         </>
       ) : null}
       <div className={cn("border border-gray-300 bg-base-100 relative z-10 rounded w-full h-full text-center p-5", {
-        "border-primary": featured,
+        "border-primary": featured
       })}>
         <span className="text-lg text-primary">{heading}</span>
         <h1 className="text-3xl/tight font-semibold mt-3">
-          <sup className="text-gray-500 text-sm font-normal">$</sup> {price}{" "}
-          <sub className="text-gray-500 text-sm font-normal">/{frequency}</sub>
+          ${price}
         </h1>
         <div className="border-b border-gray-200 w-full my-7" />
-        <div>
-          <div className="flex flex-col gap-4">
-            {lineItems.map((item, index) => (
-              <p key={index} className="flex items-center text-gray-600 gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-1 flex-col gap-4">
+            {lineItems.slice(0, 7).map((item, index) => (
+              <p key={index} className="flex items-center text-base-content/80 gap-4">
                 <Check className="w-4 h-4 text-green-500" />
                 {item}
               </p>
             ))}
           </div>
-          <div className="flex mt-20">
-            {children}
+          <div className="flex flex-1 flex-col gap-4">
+            {lineItems.slice(7, 14).map((item, index) => (
+              <p key={index} className="flex items-center text-base-content/80 gap-4">
+                <Check className="w-4 h-4 text-green-500" />
+                {item}
+              </p>
+            ))}
           </div>
+        </div>
+        <div className="flex mt-8">
+          {children}
         </div>
       </div>
     </div>

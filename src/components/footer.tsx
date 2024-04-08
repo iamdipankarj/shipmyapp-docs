@@ -10,7 +10,7 @@ export function Footer() {
           <div className="w-80 max-w-full flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
             <Logo className="w-32" />
             <p className="mt-3 text-sm text-base-content/80 leading-relaxed">
-              A No-Nonsense NextJS Boilerplate for Startups.
+              A No-Nonsense NextJS Starter kit for Startups.
               <br />
               Made with ❤️ by <a href="https://twitter.com/iamdipankarj" className="link link-success" target="_blank" rel="nofollow">@iamdipankarj</a>
             </p>
