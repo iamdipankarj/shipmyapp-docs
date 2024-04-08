@@ -20,7 +20,7 @@ export function EmailFeature({
   ...props
 }: EmailFeatureProps) {
   return (
-    <section className={cn("py-16 md:py-20", className)} {...props}>
+    <section className={cn("py-16 md:py-10", className)} {...props}>
       <div className="container">
         <FeatureContainer>
           <FeatureContent order="reverse">

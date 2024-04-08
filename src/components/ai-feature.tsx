@@ -1,4 +1,5 @@
-import { PencilLine, Tent } from 'lucide-react'
+import { PencilLine, PictureInPicture, Tent } from 'lucide-react'
+import Image from 'next/image'
 import React from 'react'
 import { cn } from "@/lib/utils"
 import { FeatureHeader } from '@/components/feature/feature-header'
@@ -18,7 +19,7 @@ export function AIFeature({
   ...props
 }: AIFeatureProps) {
   return (
-    <section className={cn("py-16 md:py-20", className)} {...props}>
+    <section className={cn("py-16 md:py-10", className)} {...props}>
       <div className="container">
         <FeatureContainer>
           <FeatureContent>
@@ -32,9 +33,22 @@ export function AIFeature({
               <FeatureListItem icon={<PencilLine className="h-6 w-6 text-primary" />}>
                 Streaming Response supported
               </FeatureListItem>
+              <FeatureListItem icon={<PictureInPicture className="h-6 w-6 text-primary" />}>
+                Replicate Integration
+              </FeatureListItem>
             </FeatureListContainer>
           </FeatureContent>
-          <FeatureImage imagePath="/features/llm.gif" imageHeight={1080} imageWidth={900} />
+          <div className="lg:order-2">
+            <Image
+              src="/features/llm.gif"
+              alt="ShipMyApp Banner"
+              className="w-full h-full p-2 rounded-lg"
+              width={1080}
+              height={900}
+              priority
+              unoptimized
+            />
+          </div>
         </FeatureContainer>
       </div>
     </section>

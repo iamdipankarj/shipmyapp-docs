@@ -19,7 +19,7 @@ export function LandingFeature({
   ...props
 }: LandingFeatureProps) {
   return (
-    <section className={cn("py-16 md:py-20", className)} {...props}>
+    <section className={cn("py-16 md:py-10", className)} {...props}>
       <div className="container">
         <FeatureContainer>
           <FeatureContent>
@@ -38,7 +38,7 @@ export function LandingFeature({
               </FeatureListItem>
             </FeatureListContainer>
           </FeatureContent>
-          <FeatureImage imagePath="/features/banner.png" imageHeight={1080} imageWidth={900} />
+          <FeatureImage imagePath="/features/landing.png" imageHeight={1080} imageWidth={900} />
         </FeatureContainer>
       </div>
     </section>

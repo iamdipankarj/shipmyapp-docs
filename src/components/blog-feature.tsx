@@ -11,7 +11,7 @@ export function BlogFeature({
   ...props
 }: BlogFeatureProps) {
   return (
-    <section className={cn("py-16 md:py-20", className)} {...props}>
+    <section className={cn("py-16 md:py-10", className)} {...props}>
       <div className="container">
         <div className="grid lg:grid-cols-2 grid-cols-1 2xl:gap-24 gap-10 items-center">
           <div className="order-2 lg:order-1">
