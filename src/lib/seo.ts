@@ -4,10 +4,10 @@ interface MetaDataProps extends Metadata {
   canonicalUrlRelative?: string
 }
 
-const siteDescription = "A no-nonsense NextJS Boilerplate for Startups."
+const siteDescription = "A No-Nonsense NextJS Starter kit for Startups. Build your SaaS in a week and avoid burnout."
 
 export function getMetaData({
-  title = "ShipMyApp | A NextJS Boilerplate for Startups",
+  title = "ShipMyApp | A No-Nonsense NextJS Boilerplate for Startups",
   description = siteDescription,
   canonicalUrlRelative = process.env.HOST_NAME
 }: MetaDataProps = {}): Metadata {
@@ -42,7 +42,7 @@ export function getMetaData({
       siteName: "ShipMyApp",
       images: [
         {
-          url: `${process.env.HOST_NAME}/banner.png`,
+          url: `${process.env.HOST_NAME}/open-graph-image.png`,
           width: 1200,
           height: 630,
           alt: "ShipMyApp"
@@ -58,7 +58,7 @@ export function getStructuredData() {
     "@type": "SoftwareApplication",
     "name": "ShipMyApp",
     "description": siteDescription,
-    "image": `${process.env.HOST_NAME}/banner.png`,
+    "image": `${process.env.HOST_NAME}/open-graph-image.png`,
     "url": process.env.HOST_NAME,
     "author": {
       "@type": "Website",

@@ -24,7 +24,12 @@ export function ConfirmationModal({
   const handleContinue = (e: FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    router.push(`https://shipmyapp.lemonsqueezy.com/checkout/buy/587c09b7-844a-4caf-8182-08e70fc7d50f?checkout[custom][username]=${username}`);
+    const trimmedUsername = username.trim();
+    if (process.env.NODE_ENV === 'development') {
+      router.push(`https://shipmyapp.lemonsqueezy.com/checkout/buy/587c09b7-844a-4caf-8182-08e70fc7d50f?checkout[custom][username]=${trimmedUsername}`);
+    } else {
+      router.push(`https://shipmyapp.lemonsqueezy.com/buy/25e6ad0f-634e-440f-819a-4f041b84424d?checkout[custom][username]=${trimmedUsername}`);
+    }
   }
 
   return (

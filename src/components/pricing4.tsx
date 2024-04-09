@@ -19,7 +19,7 @@ export function Pricing4({
           <PricingColumnCorporate
             className="flex-1"
             heading="All inclusive pricing"
-            price="79"
+            price="59"
             frequency="month"
             lineItems={[
               'Next.JS 14',
