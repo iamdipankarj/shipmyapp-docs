@@ -59,7 +59,7 @@ export default function TOS() {
           </p>
           <h2>9. Warranty Disclaimer</h2>
           <p>
-            ShipMyApp is provided "as is". We do not warrant that it will be suitable for your intended use or that it will be uninterrupted or error-free.
+            ShipMyApp is provided &quot;as is&quot;. We do not warrant that it will be suitable for your intended use or that it will be uninterrupted or error-free.
           </p>
           <h2>10. Limitation of Liability</h2>
           <p>
