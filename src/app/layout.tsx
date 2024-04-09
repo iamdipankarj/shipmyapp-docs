@@ -26,6 +26,13 @@ export default async function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(getStructuredData()) }}
         />
+        <link rel="preconnect" href="https://plausible.io" crossOrigin="anonymous" />
+        <script type="text/javascript" dangerouslySetInnerHTML={{
+          __html: `
+          window.$crisp=[];window.CRISP_WEBSITE_ID="4570d6a2-5071-4fd0-a87d-e8aff0b994b1";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+          `
+        }} />
+        <script defer data-domain="shipmyapp.com" src="https://plausible.io/js/script.js"></script>
       </head>
       <body className={cn("min-h-screen font-sans antialiased", fontSans.variable)}>
         <ProgressProvider>

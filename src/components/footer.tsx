@@ -36,16 +36,16 @@ export function Footer() {
               <div>
                 <div className="flex flex-col gap-3">
                   <h5 className="mb-3 font-semibold uppercase">LINKS</h5>
-                  <Link className="link link-hover text-gray-500/80" href="/#pricing">
+                  <Link className="link link-hover text-base-content/60" href="/#pricing">
                     Pricing
                   </Link>
-                  <Link className="link link-hover text-gray-500/80" target="_blank" href="https://docs.shipmyapp.com/">
+                  <Link className="link link-hover text-base-content/60" target="_blank" href="https://docs.shipmyapp.com/">
                     Documentation
                   </Link>
                   <Link
                     href="mailto:iamdipankarj.workspace@gmail.com"
                     target="_blank"
-                    className="link link-hover text-gray-500/80"
+                    className="link link-hover text-base-content/60"
                   >
                     Support
                   </Link>
@@ -54,10 +54,10 @@ export function Footer() {
               <div>
                 <div className="flex flex-col gap-3">
                   <h5 className="mb-3 font-semibold uppercase">LEGAL</h5>
-                  <Link className="link link-hover text-gray-500/80" href="/tos">
+                  <Link className="link link-hover text-base-content/60" href="/tos">
                     Terms of Service
                   </Link>
-                  <Link className="link link-hover text-gray-500/80" href="/privacy-policy">
+                  <Link className="link link-hover text-base-content/60" href="/privacy-policy">
                     Privacy Policy
                   </Link>
                 </div>
@@ -65,7 +65,7 @@ export function Footer() {
               <div>
                 <div className="flex flex-col gap-3">
                   <h5 className="mb-3 font-semibold uppercase">Social Media</h5>
-                  <div className="text-gray-500/80">
+                  <div className="text-base-content/60">
                     <Link className="link link-hover" href="https://twitter.com/iamdipankarj">X: @iamdipankarj</Link>
                   </div>
                 </div>
