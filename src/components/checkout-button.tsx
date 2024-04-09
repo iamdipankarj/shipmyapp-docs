@@ -18,7 +18,7 @@ export function CheckoutButton({
   const [confirmOpen, setConfirmOpen] = useState(false)
 
   const handleCheckoutClick = () => {
-    setConfirmOpen(true);
+    // setConfirmOpen(true);
   }
 
   return (
@@ -28,7 +28,8 @@ export function CheckoutButton({
         "btn-outline": !featured
       })} {...props}>
         <Banknote className="w-5 h-5" />
-        {children}
+        {/* {children} */}
+        Coming Soon
       </button>
     </>
   )
