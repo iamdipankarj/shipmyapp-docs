@@ -4,7 +4,7 @@ interface MetaDataProps extends Metadata {
   canonicalUrlRelative?: string
 }
 
-const siteDescription = "A No-Nonsense NextJS Starter kit for Startups. Build your SaaS in a week and avoid burnout."
+const siteDescription = "Build your SaaS in a week and avoid burnout."
 
 export function getMetaData({
   title = "ShipMyApp | A No-Nonsense NextJS Boilerplate for Startups",
